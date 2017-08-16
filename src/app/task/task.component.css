@@ -1,0 +1,18 @@
+
+
+.leftA{
+    text-align: left
+}
+.leftB{
+    text-align: center
+}
+.centerA{
+margin: 0px auto;
+}
+.wrapper{
+    text-align: center;
+}
+.buton{
+    position: absolute;
+    
+}

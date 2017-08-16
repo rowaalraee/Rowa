@@ -1,0 +1,48 @@
+<h2>...............here are our products with prices...enjoy.....</h2>
+<table border="enjoy" title="list" class="centerA">
+  <tr>
+<th>type of phone:</th>
+<th> price:</th>
+  </tr>
+ <tr>
+<th>htc</th>
+<th> 4000$</th>
+  </tr>
+ <tr>
+<th>sony</th>
+<th> 2000$</th>
+  </tr>
+ <tr>
+<th>samsung</th>
+<th> 3000$</th>
+  </tr>
+ 
+ 
+</table>
+
+<h2>
+  *************the bill***********
+</h2>
+<label>please select type of phone from table above:  </label>
+<input type="text" #taskText >
+<br>
+<label>please select number of stocks you want from this type:  </label>
+<input type="text" #nums >
+<br>
+<div class='wrapper'>
+<button   class="buton"   (click)="addNewTask(taskText.value,nums.value)" > 
+  ORDER</button></div><br>
+<ol>
+    <div class="leftA" *ngFor="let task of tasks">
+     
+      {{task.toString()}}
+     
+    </div>
+    
+</ol>
+<div class="leftB">
+
+ total bill is: 
+{{tasks[0].price}}<br>
+{{tasks[0].errror}}
+</div>
